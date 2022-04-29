@@ -347,21 +347,36 @@
 
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <form name="form" action="#" autocomplete="off">
+                    <div class="form-field">
                     <label class="form-lable" for="contact-name">Имя</label>
                     <input class="form-input" id="contact-name" type="text"  name="contact-name">
 
-                    <label class="form-lable" for="contact-tel">Телефон</label>
-                    <input class="form-input" id="contact-tel" type="number" name="contact-tel">
+                    </div>
 
-                    <label class="form-lable" for="contact-email">Почта</label>
-                    <input class="form-input" id="contact-email" type="email" name="contact-email">
+                    <div class="form-field">
+                        <label class="form-lable" for="contact-tel">Телефон</label>
+                        <input class="form-input" id="contact-tel" type="number" name="contact-tel">
+    
+                    </div>
 
+                    <div class="form-field">
+                        <label class="form-lable" for="contact-email">Почта</label>
+                        <input class="form-input" id="contact-email" type="email" name="contact-email">
+    
+                    </div>
+
+                    <div class="form-comment">
                     <label class="form-lable" for="form-textarea">Комментарий</label>
                     <textarea class="form-input form-textarea" name="form-comment" id="form-textarea" placeholder="Введите текст"></textarea>
+
+                    </div>
                                         
                     
-                    <input class="form-input" id="form-policy" type="checkbox" name="form-policy">
-                    <label class="form-lable" for="form-policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    <div class="form-field">
+                        <input class="form-input" id="form-policy" type="checkbox" value="policy" name="form-policy">
+                        <label class="form-lable" for="form-policy">Соглашаюсь c рассылкой и принимаю Условия договора</label>
+    
+                    </div>
  
 
                     <button type="submit" class="button-order button-submit">Отправить</button>
