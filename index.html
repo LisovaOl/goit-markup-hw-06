@@ -341,7 +341,7 @@
             </div>
         </section>
                         <!-- Модальне вікно Форма -->
-        <div class="backdrop is-hidden" data-modal>   
+        <div class="backdrop " data-modal>   
             <div class="modal">
                 <div class="form-container">
 
@@ -385,13 +385,14 @@
                                         
                     
                     <div class="form-field">
-                        <input class="form-input" id="form-policy" type="checkbox" value="policy" name="form-policy">
-                        <label class="form-lable" for="form-policy">Соглашаюсь c рассылкой и принимаю <a class="contract" href="#">Условия договора</a> </label>
-    
+                        <input class="checkbox visually-hidden" id="form-policy" type="checkbox" value="policy" name="form-policy">
+                        <span class="checkbox-icon"></span>
+        
+                        <label class="lable-checkbox" for="form-policy">Соглашаюсь c рассылкой и принимаю <a class="contract" href="#">Условия договора</a> </label>
                     </div>
  
 
-                    <button type="submit" class="button-order button-submit">Отправить</button>
+                    <button type="submit" class="button-order button-send">Отправить</button>
 
 
 
@@ -456,12 +457,22 @@
                 </ul>
 
             </div>
-            <div class="subscribe">
-                <h3 class="subscribe social">Подпишитесь на рассылку</h3>
-                <input class="subscribe-input" type="email" name="contact-email" placeholder="E-mail">
+            <div>
+            <h3 class="sb-social social">Подпишитесь на рассылку</h3>
+            <form name="subscribe action="#" autocomplete="off">
 
-                <button type="submit" class="button-order button-submit">Подписаться</button>
+                <div class="subscribe">
 
+                        <input class="subscribe-input" type="email" name="contact-email" placeholder="E-mail">
+
+                        <button type="submit" class="button-submit"> Подписаться
+                            <svg class="icon-send" width="24px" height="24px">
+                            <use href="./images/icons/icons.svg#icon-send" ></use>
+                        </svg>
+
+                        </button>
+                    </div>
+            </form>
 
             </div> 
 
