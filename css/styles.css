@@ -857,7 +857,7 @@ margin-left: 25px;
 }
 .checkbox:checked + .checkbox-icon{
   background-color: var(--acsent-color);
-  background-image: url(./images/icons/check.svg);
+  background-image: url(../images/icons/check.svg);
   background-size: contain;
   border-color: var(--acsent-color);
 
