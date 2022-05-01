@@ -742,22 +742,33 @@ bottom: -1px;
 
 
 }
-
 .icon-close{
+  display: block;
+  margin: 0 auto;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.button-close{
+  width: 30px;
+  height: 30px;
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 8px;
-  margin-right: 8px;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   transform: scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+.button-close:hover{
+  transform: scale(1.1);  
+  cursor: pointer;
 
 }
 .icon-close:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-  fill: var(--acsent-color);
+    fill: tomato
+
 }
 
 /* Форма */
@@ -859,6 +870,7 @@ margin-left: 25px;
   background-color: var(--acsent-color);
   background-image: url(../images/icons/check.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   border-color: var(--acsent-color);
 
 }

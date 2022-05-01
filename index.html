@@ -343,6 +343,12 @@
                         <!-- Модальне вікно Форма -->
         <div class="backdrop is-hidden" data-modal>   
             <div class="modal">
+                <button class="button-close">
+                    <svg class="icon-close"  width="18" height="18" data-modal-close>
+                        <use href="./images/icons/icons.svg#icon-close" ></use>
+                    </svg>
+                </button>
+
                 <div class="form-container">
 
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
@@ -360,7 +366,7 @@
                     <div class="form-field">
 
                         <label class="form-lable" for="contact-tel">Телефон</label>
-                        <input class="form-input" id="contact-tel" type="number" name="contact-tel">
+                        <input class="form-input" id="contact-tel" type="tel" name="contact-tel">
                         <svg class="form-icon" width="18px" height="18px" >
                             <use href="./images/icons/icons.svg#icon-phone-black" ></use>
                         </svg>
@@ -398,9 +404,6 @@
 
 
                 </form>
-                <svg class="icon-close" width="30" height="30" data-modal-close>
-                    <use href="./images/icons/icons.svg#icon-close" ></use>
-                </svg>
                 </div>
 
             </div>
